@@ -5,7 +5,7 @@
         <transition>
           <div class="mainTitle" v-if="el1">
             <div class="image">
-              <img src="static/Images/Waldi.jpg" alt="My photo">
+              <img src="Images/Waldi.jpg" alt="My photo">
             </div>
             <h1>
               Val Wroblewski
@@ -52,7 +52,7 @@ export default {
       el4: false,
       el5: false,
       show: true,
-      arrowDown: 'static/Images/arrow-down.png'
+      arrowDown: 'Images/arrow-down.png'
     }
   },
   created () {

@@ -15,7 +15,7 @@
               <a :href="project.link" target="_blank" rel="noreferrer nofollow noopener">
 
                 <div class="project" @mouseenter="project.showTags=true" @mouseleave="project.showTags=false">
-                  <img :src="'static/Images/work/' + project.image" alt="">
+                  <img :src="'Images/work/' + project.image" alt="">
                   <h6 class="title">
                     {{ project.name }}
                   </h6>
@@ -46,7 +46,7 @@
               <a :href="project.link" target="_blank" rel="noreferrer nofollow noopener">
 
                 <div class="project" @mouseenter="project.showTags=true" @mouseleave="project.showTags=false">
-                  <img :src="'static/Images/work/' + project.image" alt="">
+                  <img :src="'Images/work/' + project.image" alt="">
 
                   <div :class="[project.showTags ? projectHover : projectInner]"></div>
                   <div class="tags">
@@ -85,7 +85,7 @@ export default {
   data () {
     return {
       projectsToShow: 'all',
-      githubIcon: 'static/Images/Social/gh.png',
+      githubIcon: 'Images/Social/gh.png',
       projectInner: 'projectInner',
       projectHover: 'projectHover',
       tagClass: 'tagClass',

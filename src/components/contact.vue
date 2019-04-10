@@ -47,7 +47,7 @@ export default {
   data () {
     return {
       name: 'Val Wroblewski',
-      image: 'static/Images/Waldi.jpg',
+      image: 'Images/Waldi.jpg',
       email: 'mru24@yahoo.com',
       web: 'wwproject.eu',
       tel: '07599384805',

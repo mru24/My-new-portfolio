@@ -26,17 +26,17 @@ export default {
         {
           name: 'Facebook',
           link: 'https://facebook.com/val.wroblewski',
-          image: 'static/Images/Social/fb.png'
+          image: 'Images/Social/fb.png'
         },
         {
           name: 'github',
           link: 'https://github.com/mru24',
-          image: 'static/Images/Social/gh.png'
+          image: 'Images/Social/gh.png'
         },
         {
           name: 'LinkedIn',
           link: 'https://LinkedIn.com/in/val-wroblewski-278724139/',
-          image: 'static/Images/Social/li.png'
+          image: 'Images/Social/li.png'
         }
       ]
     }
