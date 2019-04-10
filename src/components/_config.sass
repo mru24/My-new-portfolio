@@ -1,0 +1,47 @@
+// FONTS
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:300,600')
+@import url('https://fonts.googleapis.com/css?family=Raleway:200')
+
+// MIXINS
+@mixin bp-mobile
+  @media only screen and (max-width: 991px)
+    @content
+
+@mixin bp-mobileSM
+  @media only screen and (max-width: 575px)
+    @content
+
+$bgColor: #040514
+
+$borderLt: 1px solid #bbb
+
+$radiusSm: 4px
+$radiusLg: 10px
+
+ul
+  list-style: none
+
+a, a:visited, a:active
+  text-decoration: none
+  color: inherit
+
+html, body
+  width: 100%
+  height: 100vh
+body
+  background-color: $bgColor
+  font-family: 'Raleway', sans-serif
+  font-weight: 200
+  line-height: 1.7
+  letter-spacing: 2px
+  overflow-x: hidden
+  .mainContainer
+    .container
+      color: #ccc
+      font-weight: 400
+.title
+  font-weight: 300
+  color: $bgColor + 200
+  transition: .7s
+  &:hover
+    color: white

@@ -1,31 +1,59 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <Navbar/>
+    <div class="mainContainer">
+      <AnimBackground/>
+      <!-- <transition mode="out-in"> -->
+        <router-view/>
+      <!-- </transition> -->
     </div>
-    <router-view/>
+    <Footer/>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+<script>
+import Navbar from '@/components/navbar'
+import AnimBackground from '@/components/animBG'
+import Footer from '@/components/footer'
+
+export default {
+  components: {
+    Navbar,
+    AnimBackground,
+    Footer
+  },
+  data () {
+    return {
+
+    }
+  }
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+</script>
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+<style lang="sass">
+  @import './components/config'
+
+  *
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+  body, html
+    height: auto
+    min-height: 100vh
+  body
+    .mainContainer
+      position: relative
+      .container
+        position: absolute
+        top: 0
+        left: 15%
+        width: 70%
+        height: 100%
+        @include bp-mobile
+          height: auto
+        @include bp-mobileSM
+          height: auto
+          left: 4%
+          width: 92%
 </style>
